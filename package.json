@@ -1,0 +1,45 @@
+{
+  "name": "oak-center-backend-work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node -r dotenv/config src/index.js dotenv_config_path=.env",
+    "dev": "nodemon --exec babel-node -r dotenv/config src/index.js dotenv_config_path=.dev.env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenKe/oak-center-backend-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenKe/oak-center-backend-work/issues"
+  },
+  "homepage": "https://github.com/StephenKe/oak-center-backend-work#readme",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "@koa/router": "^10.1.1",
+    "@polkadot/api": "^8.9.1",
+    "@polkadot/extension-dapp": "^0.44.1",
+    "dotenv": "^16.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-passport": "^4.1.4",
+    "koa-router": "^10.1.1",
+    "koa-session": "^6.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.0",
+    "oak-js-library": "github:OAK-Foundation/OAK-JS-SDK#v0.2.0-backend",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "eslint": "^8.18.0",
+    "nodemon": "^2.0.18"
+  }
+}
